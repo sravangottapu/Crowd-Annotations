@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<style type="text/css">
+.btnExample 
+{
+  color: #900;
+  background: #FF0;
+  font-weight: bold;
+  border: 1px solid #900;
+}
+ .btnExample:hover {
+  color: #FFF;
+  background: #900;
+}
+.btnExample:hover {
+  cursor: pointer;
+}
+.buttone{
+  color: #900;
+  background: #FF0;
+  font-weight: bold;
+  border: 1px solid #900;
+}
+ .buttone:hover{
+  color: blue;
+  background: #900;
+}
+.buttone:hover {
+  cursor: pointer; 
+}
+body{
+  background-color: lightblue;
+  min-width:160px;
+}
+input[type="text"] {
+  display: block;
+  margin: 0;
+  width: 80%;
+  font-family: sans-serif;
+  font-size: 10px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+input[type="text"] {
+  padding: 7px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+#random {
+  position: relative;
+  left:30%;
+}
+</style>
+<script src="popup.js"></script>
+</head>
+<body>
+<form action="http://localhost/team2cs243/Website/insert.php" method="POST">
+<br>
+<input type="checkbox" name="annonymous" value="1">Annotate Annonymously<br><br>
+<input id="text" type="text" name="Text" placeholder="Text to Annotate"><br><input type="radio" name="labels" id = "labels" value="aa">aa<br><input type="radio" name="labels" id = "labels" value="rdf">rdf<br><input type="radio" name="labels" id = "labels" value="male">male<br><input type="radio" name="labels" id = "labels" value="insect">insect<br><br>
+Others...<br>
+<div class="ui-widget">
+<input id="labels" type="text" name="labelnew" placeholder="New Category" value="" list="datalist">
+<datalist id="datalist"><option value="ghf"><option value="sdcxdc sxc "><option value="het"><option value="insect"><option value="direction"><option value="male"><option value="random2"><option value="asdsafd"><option value="rahul"><option value="rand"><option value="mlkl"><option value="asdasd"><option value="ertwetwg"><option value="dowky"><option value="female"><option value="award"><option value="asdsad"><option value="aa"><option value="rdf"><option value="adfasdfasfsa"><option value="ploi"></datalist>
+</input>
+<br></div>
+<input id="url" type="text" name="url" placeholder="URL"><br>
+<input class = "btnExample" type="submit" value="Submit" name = "submit">
+<br>
+</form>
+<a href="http:localhost/team2cs243/chrome-extension/my.php" target="_blank">Dynamic update</a><br>
+<a href="http:localhost/team2/index.php" target="_blank">Check If you are logged in </a>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+	"manifest_version":2,
+		"name":"Annotate",
+		"description":"Allows you to annnotate text under a specific type in browser.",
+		"background":
+		{
+			"scripts":["background.js"]
+		},
+		"commands": {
+			"Activate the extension": {
+				"suggested_key": {
+					"default": "Ctrl+Q"
+				},
+				"description": "Activate the extension"
+			}
+
+			},
+		"version":"1.0",
+		"icons":
+		{
+			"64":"icon.png",
+			"32":"icon.png",
+			"16":"icon.png",
+			"128":"icon.png"
+		},
+		"permissions":
+		[
+			"contextMenus",
+		"activeTab",
+		"tabs",
+		"http://localhost/*"
+		] ,
+		"browser_action":
+		 {
+			"default_title": "Annotate me!",
+			"default_icon": "icon.png",
+			"default_popup": "popup.html"
+		}
+}

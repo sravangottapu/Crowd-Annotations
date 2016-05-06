@@ -1,0 +1,31 @@
+{
+
+  "description": "Allows user to annotate text from a webpage",
+  "manifest_version": 2,
+  "name": "AnnotateMe",
+  "version": "1.0",
+  "homepage_url": "https://gitlab.com/rahulranjan96/team2cs243",
+  "icons": {
+    "48": "icons/icon.png"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "annoatate_me@mozilla.org",
+      "strict_min_version": "45.0"
+    }
+  },
+
+  "permissions": [
+    "activeTab",
+    "http://*/*"
+  ], 
+ "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "icons/icon.png",
+    "default_title": "AnnotateMe",
+    "default_popup": "popup/popup.html"
+  }
+}
